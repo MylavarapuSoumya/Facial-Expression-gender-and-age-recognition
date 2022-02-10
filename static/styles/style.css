@@ -1,0 +1,42 @@
+body
+{
+	
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  max-width: 960px;
+  margin: 0 auto;
+    animation: background-fade 5s forwards;
+    animation-iteration-count: infinite;
+}
+
+@keyframes background-fade {
+    
+	1%{ background-image:url('faceRecog.png');    }
+    20% {  background-image:linear-gradient(to right, #D5D6EA,#6CBB3C); }
+    
+    40%{background-image:linear-gradient(to up,#B0CFDE,#4AA02C)}
+    60%{background-image:linear-gradient(to left,#B4CFEC,#4AA02C)}
+    80%{background-image:linear-gradient(#79BAEC,#6CBB3C)}
+    99%{background-image:linear-gradient(to right,#56A5EC,#3EA055)}
+}
+.button {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.cls
+{
+	position:absolute;
+top : 50%;
+left:50%;
+transform:translate(-50%,-50%);
+}
